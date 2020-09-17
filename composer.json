@@ -1,0 +1,27 @@
+{
+    "name": "actcmsvn/sharecode",
+    "description": "Package for checking licencnse key and update for sharecode project.",
+    "authors": [
+        {
+            "name": "Duc Trung",
+            "email": "actcms.work@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "zanysoft/laravel-zip": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Actcmsvn\\Sharecode\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Actcmsvn\\Sharecode\\ActcmsvnSharecodeServiceProvider"
+            ]
+        }
+    }
+}
