@@ -89,7 +89,7 @@ trait AppBoot
     /**
      * @param Request $request
      * @return array
-     * Send request on froiden sharecode server to validate
+     * Send request on actcmsvn sharecode server to validate
      */
     public function purchaseVerified(Request $request)
     {
@@ -180,7 +180,7 @@ trait AppBoot
             'version' => $version,
         ];
 
-        // Send request to froiden server to validate the license
+        // Send request to actcmsvn server to validate the license
         $response = $this->curl($postData);
 
         $this->saveSupportSettings($response);

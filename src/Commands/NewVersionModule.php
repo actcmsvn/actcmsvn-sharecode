@@ -54,7 +54,7 @@ class NewVersionModule extends Command
 
         $this->comment("\n" . $this->module . '-' . $version.' and '. $this->module . '-auto-' . $version.' is Ready to distribute');
 
-        $this->comment("\n" . 'run ./upload.sh to upload to froiden server');
+        $this->comment("\n" . 'run ./upload.sh to upload to actcmsvn server');
 
     }
 
